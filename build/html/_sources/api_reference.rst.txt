@@ -1,7 +1,7 @@
 Developer API Reference
 =======================
 
-DataForge PDM can be integrated directly with your corporate ERP systems using our REST API.
+DataForge PDM can be integrated directly with your corporate :term:`ERP` systems using our REST API.
 
 BOM Export
 ----------
@@ -22,4 +22,4 @@ include_dwg boolean Includes 2D drawings in the export. Default is ``false``.
 =========== ======= ==============================================================
 
 .. note::
-   Calling this API on an assembly that is not in the *Released* state will return a standard HTTP ``403 Forbidden`` status code.
+   Calling this API on an assembly that is not in the :term:`Released` state will return a standard HTTP ``403 Forbidden`` status code.

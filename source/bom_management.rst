@@ -8,7 +8,7 @@ Bulk BOM Export
 This feature downloads the complete BOM and its associated drawings in a ZIP archive.
 
 .. warning::
-   To export a BOM, the assembly must be in the **Released** lifecycle state.
+   To export a BOM, the assembly must be in the :term:`Released` lifecycle state.
 
 **Export Procedure:**
 
@@ -24,12 +24,12 @@ This feature downloads the complete BOM and its associated drawings in a ZIP arc
 
 Troubleshooting: Export Error
 -----------------------------
-If you encounter an error message regarding missing permissions during an export attempt, your assembly is likely in the *Work in Progress* state.
+If you encounter an error message regarding missing permissions during an export attempt, your assembly is likely in the :term:`Work in Progress` state.
 
 **Solution:** 
 
 Check the lifecycle state of the main assembly and all its child components.
-Transition them through the approval process (*In Review*) to the final *Released* state.
+Transition them through the approval process (:term:`In Review`) to the final state.
 Then, retry the export.
 
 User Interface Text Design (UX Microcopy)
@@ -37,5 +37,5 @@ User Interface Text Design (UX Microcopy)
 *This section documents internal copy changes in the UI for version 26.3.*
 
 * **Original Error Code:** ``Err_403_state_invalid_for_export``
-* **New User Text:** *This BOM cannot be exported because the CAD assembly has not yet been approved for manufacturing (Required state: Released).*
+* **New User Text:** *This BOM cannot be exported because the CAD assembly has not yet been approved for manufacturing (Required state:* :term:`Released`).
 * **New Tooltip (Button Hint):** *Downloads the BOM and associated drawings in a ZIP archive.*

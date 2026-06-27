@@ -6,7 +6,7 @@ This update of DataForge PDM primarily brings faster preparation of manufacturin
 New Features
 ------------
 * **Bulk BOM Export:** Users can now download complete BOMs, including drawings, with a single click directly from the assembly's context menu.
-* **REST API for Exports:** We have added a new endpoint for direct integration of BOM exports into your ERP systems.
+* **REST API for Exports:** We have added a new endpoint for direct integration of BOM exports into your :term:`ERP` systems.
 
 Improvements and Bug Fixes
 --------------------------

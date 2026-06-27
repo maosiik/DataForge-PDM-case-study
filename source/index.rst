@@ -1,7 +1,5 @@
 Welcome to DataForge PDM Documentation
 =======================================
-
-
 This system is used for managing CAD data, approving file versions, and exporting manufacturing data. Below you will find guides to the new features and core concepts for version 26.3.
 
 .. toctree::
@@ -12,3 +10,4 @@ This system is used for managing CAD data, approving file versions, and exportin
    bom_management
    api_reference
    release_notes
+   glossary

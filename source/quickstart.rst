@@ -26,7 +26,7 @@ This short guide will walk you through the basic workflow.
 2. Open the created project and click **Upload Model**.
 3. Select a CAD file from your computer (supported formats are ``.step`` or ``.sldprt``).
 4. Once uploaded, right-click the file and select **Check-in** to create its first fixed version on the server.
-5. Change the document state by clicking **Transition to In Review**. The model is now ready for inspection.
+5. Change the document state by clicking **Transition to** :term:`In Review`. The model is now ready for inspection.
 
 .. image:: /_static/tutorial_upload.png
    :width: 600px

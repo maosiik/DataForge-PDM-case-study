@@ -2,7 +2,7 @@
 <html lang="en" data-accent-color="violet" data-content_root="./">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Working with Bill of Materials (BOM) - DataForge PDM 26.3 documentation</title><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Developer API Reference" href="api_reference.html" /><link rel="prev" title="Quick Start and Core Concepts" href="quickstart.html" /><script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Glossary of Terms - DataForge PDM 26.3 documentation</title><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="Release Notes (Version 26.3)" href="release_notes.html" /><script>
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
     setColorMode(localStorage._theme||"auto");
   </script><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=e1a1ceaf" />
@@ -18,7 +18,7 @@
 }
 </style>
     
-  <meta property="og:type" content="website"/><meta property="og:title" content="Working with Bill of Materials (BOM)"/>
+  <meta property="og:type" content="website"/><meta property="og:title" content="Glossary of Terms"/>
     <meta name="twitter:card" content="summary"/>
   </head>
 <body><div class="sy-head">
@@ -58,10 +58,10 @@ data-aria-dark="Switch to auto color mode">
         <div class="globaltoc" data-expand-depth="0"><p class="caption" role="heading" aria-level="3"><span class="caption-text">Table of Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start and Core Concepts</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Working with Bill of Materials (BOM)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bom_management.html">Working with Bill of Materials (BOM)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api_reference.html">Developer API Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes (Version 26.3)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Glossary of Terms</a></li>
 </ul>
 
         </div>
@@ -73,12 +73,7 @@ data-aria-dark="Switch to auto color mode">
     <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
       <i class="i-lucide close"></i>
     </button>
-    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
-<li><a class="reference internal" href="#bulk-bom-export">Bulk BOM Export</a></li>
-<li><a class="reference internal" href="#troubleshooting-export-error">Troubleshooting: Export Error</a></li>
-<li><a class="reference internal" href="#user-interface-text-design-ux-microcopy">User Interface Text Design (UX Microcopy)</a></li>
-</ul>
-</div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
   </aside>
   <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
   <main class="sy-main w-full max-sm:max-w-full print:pt-6">
@@ -94,7 +89,7 @@ data-aria-dark="Switch to auto color mode">
         <span>/</span>
         <meta itemprop="position" content="1" />
       </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <strong itemprop="name">Working with Bill of Materials (BOM)</strong>
+        <strong itemprop="name">Glossary of Terms</strong>
         <meta itemprop="position" content="2" />
       </li></ol>
     <div class="xl:hidden ml-1">
@@ -107,43 +102,22 @@ data-aria-dark="Switch to auto color mode">
 </div><div class="flex flex-col break-words justify-between">
       <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
   <article class="yue" role="main">
-          <section id="working-with-bill-of-materials-bom">
-<h1>Working with Bill of Materials (BOM)<a class="headerlink" href="#working-with-bill-of-materials-bom" title="Link to this heading">¶</a></h1>
-<p>The system allows for rapid generation of manufacturing data directly from the main CAD assemblies.</p>
-<section id="bulk-bom-export">
-<h2>Bulk BOM Export<a class="headerlink" href="#bulk-bom-export" title="Link to this heading">¶</a></h2>
-<p>This feature downloads the complete BOM and its associated drawings in a ZIP archive.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>To export a BOM, the assembly must be in the <a class="reference internal" href="glossary.html#term-Released"><span class="xref std std-term">Released</span></a> lifecycle state.</p>
-</div>
-<p><strong>Export Procedure:</strong></p>
-<ol class="arabic simple">
-<li><p>Open the tree view of the project structure.</p></li>
-<li><p>Right-click the main assembly.</p></li>
-<li><p>Select <strong>Export BOM</strong> from the context menu.</p></li>
-<li><p>Wait for the background process to finish; the ZIP archive will download automatically.</p></li>
-</ol>
-<a class="reference internal image-reference" href="_static/bom_export_menu.png"><img alt="Context menu showing the Export BOM option" class="align-center" src="_static/bom_export_menu.png" style="width: 600px;" />
-</a>
-</section>
-<section id="troubleshooting-export-error">
-<h2>Troubleshooting: Export Error<a class="headerlink" href="#troubleshooting-export-error" title="Link to this heading">¶</a></h2>
-<p>If you encounter an error message regarding missing permissions during an export attempt, your assembly is likely in the <a class="reference internal" href="glossary.html#term-Work-in-Progress"><span class="xref std std-term">Work in Progress</span></a> state.</p>
-<p><strong>Solution:</strong></p>
-<p>Check the lifecycle state of the main assembly and all its child components.
-Transition them through the approval process (<a class="reference internal" href="glossary.html#term-In-Review"><span class="xref std std-term">In Review</span></a>) to the final state.
-Then, retry the export.</p>
-</section>
-<section id="user-interface-text-design-ux-microcopy">
-<h2>User Interface Text Design (UX Microcopy)<a class="headerlink" href="#user-interface-text-design-ux-microcopy" title="Link to this heading">¶</a></h2>
-<p><em>This section documents internal copy changes in the UI for version 26.3.</em></p>
-<ul class="simple">
-<li><p><strong>Original Error Code:</strong> <code class="docutils literal notranslate"><span class="pre">Err_403_state_invalid_for_export</span></code></p></li>
-<li><p><strong>New User Text:</strong> <em>This BOM cannot be exported because the CAD assembly has not yet been approved for manufacturing (Required state:</em> <a class="reference internal" href="glossary.html#term-Released"><span class="xref std std-term">Released</span></a>).</p></li>
-<li><p><strong>New Tooltip (Button Hint):</strong> <em>Downloads the BOM and associated drawings in a ZIP archive.</em></p></li>
-</ul>
-</section>
+          <section id="glossary-of-terms">
+<h1>Glossary of Terms<a class="headerlink" href="#glossary-of-terms" title="Link to this heading">¶</a></h1>
+<dl class="simple glossary">
+<dt id="term-Check-in">Check-in<a class="headerlink" href="#term-Check-in" title="Link to this term">¶</a></dt><dd><p>The process of uploading a modified file back to the PDM vault, creating a new version, and unlocking it for other users.</p>
+</dd>
+<dt id="term-Check-out">Check-out<a class="headerlink" href="#term-Check-out" title="Link to this term">¶</a></dt><dd><p>The process of downloading a file from the PDM vault to a local workspace and locking it so no one else can edit it simultaneously.</p>
+</dd>
+<dt id="term-ERP">ERP<a class="headerlink" href="#term-ERP" title="Link to this term">¶</a></dt><dd><p>Enterprise Resource Planning is a corporate software system (such as SAP) used to manage daily business activities, including manufacturing and supply chain. DataForge PDM often exports BOMs directly to ERP systems.</p>
+</dd>
+<dt id="term-In-Review">In Review<a class="headerlink" href="#term-In-Review" title="Link to this term">¶</a></dt><dd><p>A lifecycle state where the file is locked and waiting for a manager’s approval.</p>
+</dd>
+<dt id="term-Released">Released<a class="headerlink" href="#term-Released" title="Link to this term">¶</a></dt><dd><p>A lifecycle state where the file is fully approved, locked against further changes, and ready for manufacturing. Only files in this state can be used for BOM exports.</p>
+</dd>
+<dt id="term-Work-in-Progress">Work in Progress<a class="headerlink" href="#term-Work-in-Progress" title="Link to this term">¶</a></dt><dd><p>A lifecycle state indicating the file is currently being edited by an engineer. It is not ready for any exports.</p>
+</dd>
+</dl>
 </section>
 
         </article><button class="back-to-top" type="button">
@@ -152,18 +126,10 @@ Then, retry the export.</p>
   </svg>
   <span>Back to top</span>
 </button><div class="navigation flex print:hidden"><div class="navigation-prev">
-    <a href="quickstart.html">
+    <a href="release_notes.html">
       <i class="i-lucide chevron-left"></i>
       <div class="page-info">
-        <span>Previous</span><div class="title">Quick Start and Core Concepts</div></div>
-    </a>
-  </div><div class="navigation-next">
-    <a href="api_reference.html">
-      <div class="page-info">
-        <span>Next</span>
-        <div class="title">Developer API Reference</div>
-      </div>
-      <i class="i-lucide chevron-right"></i>
+        <span>Previous</span><div class="title">Release Notes (Version 26.3)</div></div>
     </a>
   </div></div></div>
     </div>
