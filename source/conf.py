@@ -16,6 +16,7 @@ release = '26.3'
 
 extensions = ['hoverxref.extension']
 hoverxref_roles = ['term']
+html_baseurl = 'https://maosiik.github.io/DataForge-PDM-case-study/'
 
 templates_path = ['_templates']
 exclude_patterns = []
