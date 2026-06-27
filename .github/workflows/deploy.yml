@@ -23,12 +23,12 @@ jobs:
 
       - name: Install requirements
         run: |
-          pip install -r requirements.rst # Nainstaluje Sphinx a pluginy ze seznamu
+          pip install -r requirements.rst
 
       - name: Build HTML
         run: |
-          make html
-          
+          python -m sphinx -b html source build/html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4 # Připraví prostředí pro publikaci
 
