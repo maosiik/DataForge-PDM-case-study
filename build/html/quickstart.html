@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Quick Start and Core Concepts &#8212; DataForge PDM 26.3 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=797221f4"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Working with Bill of Materials (BOM)" href="bom_management.html" />
+    <link rel="prev" title="Welcome to DataForge PDM Documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="quick-start-and-core-concepts">
+<h1>Quick Start and Core Concepts<a class="headerlink" href="#quick-start-and-core-concepts" title="Link to this heading">¶</a></h1>
+<p>Before you start working with Dataforge PDM, it is important to understand how the system protect files from being overwritten.</p>
+<section id="check-in-and-check-out-function">
+<h2>Check-in and Check-out function<a class="headerlink" href="#check-in-and-check-out-function" title="Link to this heading">¶</a></h2>
+<p>Unlike standard text documents, CAD models are complex structures of interconnected files.
+DataForge PDM does not operate like standard cloud storage.
+It uses a locking mechanism to protect data:</p>
+<ul class="simple">
+<li><p><strong>Check-out:</strong> Downloads the file to your local drive and locks it on the server. No one else can modify it during this time.</p></li>
+<li><p><strong>Check-in:</strong> Uploads your modifications back to the server, creates a new file version, and unlocks it for your colleagues.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_static/checkout_diagram.png"><img alt="*image with diagram visually explaining checking in / out*" class="align-center" src="_static/checkout_diagram.png" style="width: 600px;" />
+</a>
+</section>
+<section id="your-first-10-minutes-in-the-system-tutorial">
+<h2>Your First 10 Minutes in the System (Tutorial)<a class="headerlink" href="#your-first-10-minutes-in-the-system-tutorial" title="Link to this heading">¶</a></h2>
+<p>This short guide will walk you through the basic workflow.</p>
+<ol class="arabic simple">
+<li><p>In the top menu, click <strong>New Project</strong> and enter a project name.</p></li>
+<li><p>Open the created project and click <strong>Upload Model</strong>.</p></li>
+<li><p>Select a CAD file from your computer (supported formats are <code class="docutils literal notranslate"><span class="pre">.step</span></code> or <code class="docutils literal notranslate"><span class="pre">.sldprt</span></code>).</p></li>
+<li><p>Once uploaded, right-click the file and select <strong>Check-in</strong> to create its first fixed version on the server.</p></li>
+<li><p>Change the document state by clicking <strong>Transition to In Review</strong>. The model is now ready for inspection.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_static/tutorial_upload.png"><img alt="*image showing the process*" class="align-center" src="_static/tutorial_upload.png" style="width: 600px;" />
+</a>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">DataForge PDM</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start and Core Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#check-in-and-check-out-function">Check-in and Check-out function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#your-first-10-minutes-in-the-system-tutorial">Your First 10 Minutes in the System (Tutorial)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bom_management.html">Working with Bill of Materials (BOM)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">Developer API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes (Version 26.3)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to DataForge PDM Documentation</a></li>
+      <li>Next: <a href="bom_management.html" title="next chapter">Working with Bill of Materials (BOM)</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, Matouš Juřica.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/quickstart.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,38 @@
+Hromadný export kusovníku (BOM)
+===============================
+
+Tato funkce umožňuje stáhnout kompletní kusovník a připojené výkresy v ZIP archivu.
+
+Předpoklady pro export
+----------------------
+Aby bylo možné kusovník exportovat, musí být sestava ve stavu **Released**.
+
+Postup exportu
+--------------
+1. Otevřete stromový pohled struktury.
+2. Klikněte pravým tlačítkem na hlavní sestavu.
+3. Vyberte možnost *Exportovat BOM*.
+
+Zkouším tuhle funkci ::
+
+    ted by tohle melo vypadat
+
+    jako text ve visualu
+
+A tady už by to zase mělo být formátovaný
+
+This is an ordinary paragraph.
+
+>>> print 'this is a Doctest block'
+this is a Doctest block
+
+The following is a literal block::
+
+    >>> This is not recognized as a doctest block by
+    reStructuredText.  It *will* be recognized by the doctest
+    module, though!
+
+.. image:: /_static/test-image.png
+    :width: 600px
+    :align: center
+    :alt: Image showing selection of a project folder

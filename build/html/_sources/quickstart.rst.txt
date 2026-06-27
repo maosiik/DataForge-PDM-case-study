@@ -1,0 +1,34 @@
+Quick Start and Core Concepts
+=============================
+
+Before you start working with Dataforge PDM, it is important to understand how the system protect files from being overwritten.
+
+Check-in and Check-out function
+-------------------------------
+Unlike standard text documents, CAD models are complex structures of interconnected files.
+DataForge PDM does not operate like standard cloud storage.
+It uses a locking mechanism to protect data:
+
+* **Check-out:** Downloads the file to your local drive and locks it on the server. No one else can modify it during this time.
+* **Check-in:** Uploads your modifications back to the server, creates a new file version, and unlocks it for your colleagues.
+
+.. image:: /_static/checkout_diagram.png
+   :width: 600px
+   :align: center
+   :alt: *image with diagram visually explaining checking in / out*
+
+
+Your First 10 Minutes in the System (Tutorial)
+----------------------------------------------
+This short guide will walk you through the basic workflow.
+
+1. In the top menu, click **New Project** and enter a project name.
+2. Open the created project and click **Upload Model**.
+3. Select a CAD file from your computer (supported formats are ``.step`` or ``.sldprt``).
+4. Once uploaded, right-click the file and select **Check-in** to create its first fixed version on the server.
+5. Change the document state by clicking **Transition to In Review**. The model is now ready for inspection.
+
+.. image:: /_static/tutorial_upload.png
+   :width: 600px
+   :align: center
+   :alt: *image showing the process*

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Working with Bill of Materials (BOM) &#8212; DataForge PDM 26.3 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=797221f4"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Developer API Reference" href="api_reference.html" />
+    <link rel="prev" title="Quick Start and Core Concepts" href="quickstart.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="working-with-bill-of-materials-bom">
+<h1>Working with Bill of Materials (BOM)<a class="headerlink" href="#working-with-bill-of-materials-bom" title="Link to this heading">¶</a></h1>
+<p>The system allows for rapid generation of manufacturing data directly from the main CAD assemblies.</p>
+<section id="bulk-bom-export">
+<h2>Bulk BOM Export<a class="headerlink" href="#bulk-bom-export" title="Link to this heading">¶</a></h2>
+<p>This feature downloads the complete BOM and its associated drawings in a ZIP archive.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To export a BOM, the assembly must be in the <strong>Released</strong> lifecycle state.</p>
+</div>
+<p><strong>Export Procedure:</strong></p>
+<ol class="arabic simple">
+<li><p>Open the tree view of the project structure.</p></li>
+<li><p>Right-click the main assembly.</p></li>
+<li><p>Select <strong>Export BOM</strong> from the context menu.</p></li>
+<li><p>Wait for the background process to finish; the ZIP archive will download automatically.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_static/bom_export_menu.png"><img alt="Context menu showing the Export BOM option" class="align-center" src="_static/bom_export_menu.png" style="width: 600px;" />
+</a>
+</section>
+<section id="troubleshooting-export-error">
+<h2>Troubleshooting: Export Error<a class="headerlink" href="#troubleshooting-export-error" title="Link to this heading">¶</a></h2>
+<p>If you encounter an error message regarding missing permissions during an export attempt, your assembly is likely in the <em>Work in Progress</em> state.</p>
+<p><strong>Solution:</strong></p>
+<p>Check the lifecycle state of the main assembly and all its child components.
+Transition them through the approval process (<em>In Review</em>) to the final <em>Released</em> state.
+Then, retry the export.</p>
+</section>
+<section id="user-interface-text-design-ux-microcopy">
+<h2>User Interface Text Design (UX Microcopy)<a class="headerlink" href="#user-interface-text-design-ux-microcopy" title="Link to this heading">¶</a></h2>
+<p><em>This section documents internal copy changes in the UI for version 26.3.</em></p>
+<ul class="simple">
+<li><p><strong>Original Error Code:</strong> <code class="docutils literal notranslate"><span class="pre">Err_403_state_invalid_for_export</span></code></p></li>
+<li><p><strong>New User Text:</strong> <em>This BOM cannot be exported because the CAD assembly has not yet been approved for manufacturing (Required state: Released).</em></p></li>
+<li><p><strong>New Tooltip (Button Hint):</strong> <em>Downloads the BOM and associated drawings in a ZIP archive.</em></p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">DataForge PDM</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start and Core Concepts</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working with Bill of Materials (BOM)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bulk-bom-export">Bulk BOM Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-export-error">Troubleshooting: Export Error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-interface-text-design-ux-microcopy">User Interface Text Design (UX Microcopy)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">Developer API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes (Version 26.3)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="quickstart.html" title="previous chapter">Quick Start and Core Concepts</a></li>
+      <li>Next: <a href="api_reference.html" title="next chapter">Developer API Reference</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, Matouš Juřica.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/bom_management.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
