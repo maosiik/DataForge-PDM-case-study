@@ -15,7 +15,7 @@ It uses a locking mechanism to protect data:
 .. image:: /_static/checkout_diagram.png
    :width: 600px
    :align: center
-   :alt: *image with diagram visually explaining checking in / out*
+   :alt: image with diagram visually explaining checking in / out
 
 
 Your First 10 Minutes in the System (Tutorial)
@@ -31,4 +31,4 @@ This short guide will walk you through the basic workflow.
 .. image:: /_static/tutorial_upload.png
    :width: 600px
    :align: center
-   :alt: *image showing the process*
+   :alt: image showing the process

@@ -23,7 +23,7 @@ jobs:
 
       - name: Install requirements
         run: |
-          pip install -r requirements.rst
+          pip install -r requirements.txt
 
       - name: Build HTML
         run: |

@@ -20,7 +20,7 @@ This feature downloads the complete BOM and its associated drawings in a ZIP arc
 .. image:: /_static/bom_export_menu.png
    :width: 600px
    :align: center
-   :alt: Context menu showing the Export BOM option
+   :alt: image with context menu showing the Export BOM option
 
 Troubleshooting: Export Error
 -----------------------------
